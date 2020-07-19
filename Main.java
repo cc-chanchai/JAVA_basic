@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String [] arges) {
+    public static void main(String[] arges) {
         Employee employee1 = new Employee(); //create object
         employee1.setId("1");
         employee1.setName("chanchai");
@@ -14,7 +14,7 @@ public class Main {
         employee2.printEmployee();
         System.out.println("Main.java ::: id : " + employee2.getId() + ", name : " + employee2.getName() + ", saraly : " + employee2.getSaraly());
         
-        //use Constructor
+        //Constructor
         Employee employee3 = new Employee();
         employee3.printEmployee();
 
@@ -23,5 +23,14 @@ public class Main {
 
         Employee employee5 = new Employee("5", "custom constructor", 20090.0);
         employee5.printEmployee();
+
+        //Non Access Modifier
+        // String id = AccessModifier.id;  // error cuase id isn't static
+        // System.out.println(id);
+        String name = NonAccessModifier.name;
+        System.out.println(name);
+        NonAccessModifier.printText();
+        NonAccessModifier.name = "AAAAA";
+        System.out.println(NonAccessModifier.name);
     }
 }
