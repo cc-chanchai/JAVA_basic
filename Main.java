@@ -13,5 +13,14 @@ public class Main {
         employee2.setSaraly(2500.123);
         employee2.printEmployee();
         System.out.println("Main.java ::: id : " + employee2.getId() + ", name : " + employee2.getName() + ", saraly : " + employee2.getSaraly());
+        
+        Employee employee3 = new Employee();
+        employee3.printEmployee();
+
+        Employee employee4 = new Employee("4", "custom constructor");
+        employee4.printEmployee();
+
+        Employee employee5 = new Employee("5", "custom constructor", 20090.0);
+        employee5.printEmployee();
     }
 }

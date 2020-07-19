@@ -4,6 +4,23 @@ class Employee{
     private String name;
     private Double saraly;
     
+    // Default Constructor
+    public Employee(){
+        // System.out.println("create obj in constructor.");
+    }
+
+    // Dynamic Constructor
+    public Employee(String id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    // Dynamic Constructor
+    public Employee(String id, String name, Double saraly){
+        this.id = id;
+        this.name = name;
+        this.saraly = saraly;
+    }
 
     public void setId(String id){
         this.id = id;
