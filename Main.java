@@ -14,6 +14,7 @@ public class Main {
         employee2.printEmployee();
         System.out.println("Main.java ::: id : " + employee2.getId() + ", name : " + employee2.getName() + ", saraly : " + employee2.getSaraly());
         
+        //use Constructor
         Employee employee3 = new Employee();
         employee3.printEmployee();
 

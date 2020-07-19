@@ -1,5 +1,5 @@
 class Employee{
-    //acess modifier ==> public, portected(inheritan), private(in class)
+    
     private String id;
     private String name;
     private Double saraly;
