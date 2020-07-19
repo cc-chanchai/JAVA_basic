@@ -7,6 +7,5 @@ Constructor { เป็น method พิเศษ ทำงานอัตโน
 }
 
 test git stash
-$ git stash
 $ git pull
 $ git stash pop
