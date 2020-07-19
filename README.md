@@ -5,3 +5,8 @@ Constructor { เป็น method พิเศษ ทำงานอัตโน
                 - ไม่คืนค่ากลับ ( return )
                 - เป็น public
 }
+
+test git stash
+$ git stash
+$ git pull
+$ git stash pop
