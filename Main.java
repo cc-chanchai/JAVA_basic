@@ -56,5 +56,37 @@ public class Main {
         FinalClass finalClass = new FinalClass();
         // finalClass.companyName = "AAB"; // companyName มีการกำหนด final ทำให้ assign ค่าไม่ได้
         System.out.println(finalClass.companyName);
+        
+        
+        // overloading
+        Overloading overloading1 = new Overloading();
+        overloading1.skill();
+        Overloading overloading2 = new Overloading();
+        overloading2.skill("JAVA");
+        Overloading overloading3 = new Overloading();
+        overloading3.skill("JAVA", "C#");
+        Overloading overloading4 = new Overloading();
+        overloading4.skill("JAVA", "C#", "Python", "Docker", "NodeJS");
+
+        // overriding
+        Overriding1 overriding1 = new Overriding1();
+        overriding1.bonus();
+
+        //abstract
+        Abstract1 abstract1 = new Abstract1();
+        abstract1.register();
+        abstract1.preTest();
+        abstract1.abstractBonus();
+        
+
+        // Interface
+        Interface2 interface2 = new Interface2();
+        interface2.setName("Iron man");
+        interface2.setAge(45);
+        interface2.showData();
+        interface2.skill("Shooting");
+        interface2.moving("fast");
+        interface2.weapon("lazer");
+        interface2.setNation("canada");
     }
 }
