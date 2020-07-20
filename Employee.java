@@ -7,10 +7,16 @@ class Employee{
     // Default Constructor
     public Employee(){
         // System.out.println("create obj in constructor.");
+        System.out.println("I'm Employee.");
     }
 
+    //example super() from inheritance
+    public Employee(String name){
+        this.name = name;
+        printEmployee();
+    }
     // Dynamic Constructor
-    public Employee(String id, String name){
+    public Employee(String id,String name){
         this.id = id;
         this.name = name;
     }
