@@ -32,5 +32,29 @@ public class Main {
         NonAccessModifier.printText();
         NonAccessModifier.name = "AAAAA";
         System.out.println(NonAccessModifier.name);
+
+        // Inheritance
+        Inheritance1 inh1 = new Inheritance1();
+        inh1.setId("1");
+        inh1.setName("inheritance");
+        inh1.setSaraly(1234.5);
+        inh1.skill = "JAVA";
+        inh1.printEmployee();
+        System.out.println(inh1.skill);
+
+        Inheritance2 inh2 = new Inheritance2();
+        inh2.setId("1");
+        inh2.setName("wutti");
+        inh2.setSaraly(3000.3);
+        inh2.printEmployee();
+
+        Inheritance1 in1 = new Inheritance1("in1");
+        Inheritance2 in2 = new Inheritance2("in2");
+        
+
+        // final
+        FinalClass finalClass = new FinalClass();
+        // finalClass.companyName = "AAB"; // companyName มีการกำหนด final ทำให้ assign ค่าไม่ได้
+        System.out.println(finalClass.companyName);
     }
 }
